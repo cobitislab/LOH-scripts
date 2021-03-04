@@ -11,5 +11,5 @@ The script `pairwise_mismatches.r` counts mismatches in genotypes between pairs 
 
 Example command to obtain such table:
 ```bash
-gatk3 -T VatiantsToTable -R ref.fa -V var.vcf -F CHROM -F POS -GF GT -o table.tsv
+gatk3 -T VariantsToTable -R ref.fa -V var.vcf -F CHROM -F POS -GF GT -o table.tsv
 ```
