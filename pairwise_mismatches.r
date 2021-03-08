@@ -10,7 +10,7 @@ mlls_combn <- grep("GT",colnames(tab),val=T) %>% combn(2) %>% t
 mlls_dist <- data.frame(mlls_combn,matrix(NA,nrow(mlls_combn),3))
 names(mlls_dist) <- c("anim1","anim2","total","mismatch","intraMLL")
 
-## REMOVE SUSPICIOUS POSITIONS (homozygous in F1 hybrids)
+## REMOVE SUSPICIOUS POSITIONS (homozygous in F1 hybrids, only makes sense for table of diagnostic positions)
 tab <- tab[-grep("A/A|C/C|G/G|T/T",tab$csc069_GT),]
 tab <- tab[-grep("A/A|C/C|G/G|T/T",tab$csc071_GT),]
 
