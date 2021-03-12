@@ -13,3 +13,5 @@ Example command to obtain such table:
 ```bash
 gatk3 -T VariantsToTable -R ref.fa -V var.vcf -F CHROM -F POS -GF GT -o table.tsv
 ```
+## Exploring MLLs
+The jupyter notebook `mlls_appendix.ipynb` explores how pairwise distances from SNP data of clonal samples can be used to delimit clones into multilocus lineages (MLLs).
